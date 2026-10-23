@@ -5,10 +5,16 @@
 // ============================================================
 
 import 'package:flutter/material.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'banner_ad_widget.dart';
+
 
 // --------------- ENTRY POINT ----------------
 // Every Flutter app starts from main() → runApp()
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  await MobileAds.instance.initialize();
   runApp(const AgeCalculatorApp());
 }
 
@@ -467,6 +473,7 @@ class _HomeScreenState extends State<HomeScreen>
           ),
         ),
       ),
+      bottomNavigationBar: const BannerAdWidget(),
     );
   }
 
