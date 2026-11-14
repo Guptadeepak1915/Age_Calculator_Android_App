@@ -5,16 +5,16 @@
         android:icon="@mipmap/ic_launcher">
 
             <!-- ye test wla google id hai -->
-         <meta-data
+         <!-- <meta-data
     android:name="com.google.android.gms.ads.APPLICATION_ID"
-    android:value="ca-app-pub-3940256099942544~3347511713"/>
+    android:value="ca-app-pub-3940256099942544~3347511713"/> -->
 
 
     <!--ye real mob id hai niche wala-->
-    <!-- <meta-data 
+    <meta-data 
     android:name="com.google.android.gms.ads.APPLICATION_ID"  
     android:value="ca-app-pub-9953234712626365~7019549852"/>
-     -->
+    
         <activity
             android:name=".MainActivity"
             android:exported="true"
